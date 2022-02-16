@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Simon's Blog - Don't think,do it</title><meta name="keywords" content="技术博客,Java开发"><meta name="author" content="Simon"><meta name="copyright" content="Simon"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta property="og:type" content="website">
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Simon's Blog - Don't think,do it</title><meta name="keywords" content="技术博客,Java开发"><meta name="author" content="Simon"><meta name="copyright" content="Simon"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta property="og:type" content="website">
 <meta property="og:title" content="Simon&#39;s Blog">
 <meta property="og:url" content="https://simonjiang99.github.io/index.html">
 <meta property="og:site_name" content="Simon&#39;s Blog">
@@ -35,26 +35,21 @@
   lightbox: 'mediumZoom',
   Snackbar: undefined,
   source: {
-    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
     justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-    },
-    fancybox: {
-      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
     }
   },
   isPhotoFigcaption: false,
   islazyload: false,
-  isanchor: false
+  isAnchor: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
   title: 'Simon\'s Blog',
   isPost: false,
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2022-01-16 22:18:04'
+  postUpdate: '2022-02-16 17:57:01'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -157,41 +152,196 @@
       }
     
     const detectApple = () => {
-      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
         document.documentElement.classList.add('apple')
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment"></i><span> 哔哔一下</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/index.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Simon's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment"></i><span> 哔哔一下</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Simon's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/simonjiang99" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ghostvipjiang@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/posts/2022/32615.html" title="el级联选择器数据回显">     <img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="el级联选择器数据回显"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/32615.html" title="el级联选择器数据回显">el级联选择器数据回显</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-14T10:26:12.000Z" title="发表于 2022-01-14 18:26:12">2022-01-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">踩坑记录</a></span></div><div class="content">问题
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">30</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment"></i><span> 哔哔一下</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/index.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Simon's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment"></i><span> 哔哔一下</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Simon's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/simonjiang99" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ghostvipjiang@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2022/6f2612a2.html" title="SpringBoot"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/6f2612a2.html" title="SpringBoot">SpringBoot</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:36:15.000Z" title="发表于 2022-02-16 17:36:15">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">SpringBoot原理初探
+ 自动装配流程图
 
-填写课程信息,选择课程分类,进入下一步
+自动装配:
 
-
-
-需要到上一步进行修改
-
+pom.xml
 
 
-发现级联选择器无法回显
-
-初次尝试
-
-由于级联选择值与value绑定,想到通过将数据库中(在新增时,下一步即存入数据库)课程信息的新增记录重新赋值给value
-
-12this.value[0] = response.data.courseInfoVo.subjectParentId //一级分类idthis.value[1] = response.data.courseInfoVo.subjectId //二级分类id
+spring-boot-dependencies:核心依赖在父工程中
+我们在写或引入一些SB依赖的时候,不需要指定版本,就是因为有这些版本仓库
 
 
-结果发现,课程分类仍然不回显
+启动器
 
-解决方案一
-通过查阅,发现级联数据改变,但是视图没有改变, ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Simon</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/simonjiang99" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ghostvipjiang@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/2022/32615.html" title="el级联选择器数据回显"><img src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="el级联选择器数据回显"/></a><div class="content"><a class="title" href="/posts/2022/32615.html" title="el级联选择器数据回显">el级联选择器数据回显</a><time datetime="2022-01-14T10:26:12.000Z" title="发表于 2022-01-14 18:26:12">2022-01-14</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+
+```xml
+
+    org.springframework.boot
+    spring-boot-starter-web
+
+12345678910111213141516171819- 启动器:Springboot的启动场景- spring-boot-starter-web,会帮我们自动导入web环境所有的依赖- springboot会将所有的功 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2022/ae0f95e0.html" title="SpringMVC"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringMVC"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/ae0f95e0.html" title="SpringMVC">SpringMVC</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:36:04.000Z" title="发表于 2022-02-16 17:36:04">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">SpringMVC执行流程
+图为SpringMVC的一个较完整的流程图，实线表示SpringMVC框架提供的技术，不需要开发者实现，虚线表示需要开发者实现。
+简要分析执行流程
+
+DispatcherServlet表示前置控制器，是整个SpringMVC的控制中心。用户发出请求，DispatcherServlet接收请求并拦截请求。
+我们假设请求的url为 : http://localhost:8080/SpringMVC/hello
+如上url拆分成三部分：
+http://localhost:8080服务器域名
+SpringMVC部署在服务器上的web站点
+hello表示控制器
+通过分析，如上 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2022/6c92115f.html" title="Spring"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/6c92115f.html" title="Spring">Spring</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:35:58.000Z" title="发表于 2022-02-16 17:35:58">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">Spring1. Spring1.1 简介
+2002,Spring雏形:interface21框架
+
+Spring以interface21为基础,于2004年3月34日发布1.0正式版
+
+Rod Johnson,Spring Framework创始人
+
+spring理念:使现有的技术更加容易使用,整合了现有的技术框架
+
+
+
+
+SSH:Struct2 + Spring + Hibernate
+SSM:SpringMVC + Spring + Mybatis
+
+1.2 优点
+Spring是一个开源的框架
+
+轻量级,非侵入式
+
+控制反转(Ioc),面向切面编程(AOP)
+
+支持事务的处理,对框架整合 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2022/50a54d3c.html" title="视图"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="视图"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/50a54d3c.html" title="视图">视图</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:33:17.000Z" title="发表于 2022-02-16 17:33:17">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">视图
+视图是一种虚拟存在的表,行和列的数据来自定义视图的查询中使用的表,并且是在使用视图时动态生成的,只保存了sql逻辑,不保存查询结果
+
+应用场景:
+
+多个地方用到同样的查询结果
+该查询结果使用的sql语句较复杂
+
+
+
+12345678910111213#查询姓张的学生名和专业名SELECT stuname,majornameFROM stuinfo sINNER JOIN major m ON s.majorid = m.idWHERE s.stuname LIKE &#x27;张%&#x27;;CREATE VIEW v1ASSELECT stuname,majornameFROM st ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2022/196d9dc7.html" title="流程控制结构"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="流程控制结构"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/196d9dc7.html" title="流程控制结构">流程控制结构</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:33:12.000Z" title="发表于 2022-02-16 17:33:12">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">流程控制结构顺序结构程序从上往下依次执行
+分支结构程序按条件选择执行,从两条或多条路径中选择一条执行
+
+if函数
+功能:实现简单双分支
+语法:if(条件,值1,值2)
+位置:可以作为表达式放在任何位置
+
+
+case结构
+功能:实现多分支
+语法1:case 表达式或字段when 值1 then 语句1;when 值2 then 语句2;…else 语句n;end [case];
+语法2:casewhen 条件1 then 语句1;when 条件2 then 语句2;…else 语句n;end [case];
+位置:可以放在任何位置,如果放在begin end外面,作为表达式结合其他语句使用
+   ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2022/babba299.html" title="存储过程和函数"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="存储过程和函数"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/babba299.html" title="存储过程和函数">存储过程和函数</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:33:02.000Z" title="发表于 2022-02-16 17:33:02">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">存储过程和函数类似于java中的方法,将一组完成特定功能的逻辑语句包装起来，对外暴露名字
+存储过程
+含义:一组预先编译好的sql语句的集合,可以理解成批处理语句
+好处:
+提高代码的重用性
+简化操作
+减少了编译次数并且减少了和数据库服务器的连接次数,提高了效率
+
+
+
+创建123456CREATE PROCEDURE 存储过程名(参数模式,参数名,参数类型)BEGIN	存储过程体(一组合法的sql语句)END
+
+
+注意:
+
+参数模式:IN:该参数可以作为输入,也就是该参数需要调用方传入值(可省略)OUT:该参数可以作为输出,也就是该参数可以作为返回值INOUT:该参数既可以作为输入又可以作为输出, ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2022/13ffbe88.html" title="变量"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="变量"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/13ffbe88.html" title="变量">变量</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:32:50.000Z" title="发表于 2022-02-16 17:32:50">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">变量
+系统变量：全局变量
+会话变量
+
+
+自定义变量:用户变量
+局部变量
+
+
+
+系统变量
+说明:变量由系统提供,不是用户定义,属于服务器层面
+
+语法:
+
+查看所有的系统变量show global|[session] variables;
+
+查看满足条件的部分系统变量show global|[session] variables like ‘%char%’;
+
+查看指定的某个系统变量的值select @@[global.|session.]系统变量名;
+
+为某个系统变量赋值
+方式一:set [global|session] 系统变量名 = 值;方式二:set @@[global.|session. ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2022/30ca4e03.html" title="TCL"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="TCL"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/30ca4e03.html" title="TCL">TCL</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:29:38.000Z" title="发表于 2022-02-16 17:29:38">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">TCLTransaction Control Language 事务控制语言
+
+事务:
+一个或一组sql语句组成一个执行单元,这个执行单元要么全部执行,要么全部不执行
+
+
+事务的特性(ACID)
+原子性(Atomicity)原子性是指事务是一个不可分割的工作单位,事务的操作要么都发生,要么都不发生
+一致性(Consistency)事务必须使数据库从一个一致性状态变换到另一个一致性状态
+隔离性(Isolation)事务的隔离性是指一个事务的执行不能被其他事务干扰,即一个事务内部的操作及使用的数据对并发的其他事务是隔离的,并发执行的各个事务之间不能互相干扰
+持久性(Durability)持久性是指 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2022/b26fc0fd.html" title="DML"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DML"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/b26fc0fd.html" title="DML">DML</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:29:31.000Z" title="发表于 2022-02-16 17:29:31">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">DML语言
+数据操作语言
+插入:insert
+修改:update
+删除:delete
+
+
+
+插入语句
+插入语句方式一:
+语法:
+insert into 表名(列名,...)
+values(值1,...);
+
+
+插入的值的类型要与列的类型一一对应或兼容
+
+12INSERT INTO beauty(id,`name`,sex,borndate,phone,photo,boyfriend_id)VALUES(12,&#x27;灵儿&#x27;,&#x27;女&#x27;,&#x27;1990-4-3&#x27;,&#x27;1231451234&#x27;,NULL,2);
+
+
+不可以为null的列 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2022/63ad7bb4.html" title="DDL"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DDL"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/63ad7bb4.html" title="DDL">DDL</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:29:23.000Z" title="发表于 2022-02-16 17:29:23">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">DDL语言
+数据定义语言-库和表的管理
+
+库的管理
+创建,修改,删除
+
+表的管理
+创建,修改,删除
+
+
+
+创建:create
+
+修改:alter
+
+删除:drop
+
+
+
+
+库的管理库的创建
+语法:
+create database [if not exists] 库名 [character set 字符集名];
+
+
+库的修改一般情况下不要修改,不要贸然修改
+
+可以更改库的字符集
+1ALTER DATABASE books CHARACTER SET gbk;
+
+库的删除1DROP DATABASE IF EXISTS books;
+
+表的管理
+通用写法:
+12345DROP DATABASE I ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Simon</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">30</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/simonjiang99" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ghostvipjiang@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">最近将写的所有笔记整理进了博客,部分博文水的一塌糊涂.../捂脸</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/2022/6f2612a2.html" title="SpringBoot"><img src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot"/></a><div class="content"><a class="title" href="/posts/2022/6f2612a2.html" title="SpringBoot">SpringBoot</a><time datetime="2022-02-16T09:36:15.000Z" title="发表于 2022-02-16 17:36:15">2022-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2022/ae0f95e0.html" title="SpringMVC"><img src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringMVC"/></a><div class="content"><a class="title" href="/posts/2022/ae0f95e0.html" title="SpringMVC">SpringMVC</a><time datetime="2022-02-16T09:36:04.000Z" title="发表于 2022-02-16 17:36:04">2022-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2022/6c92115f.html" title="Spring"><img src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring"/></a><div class="content"><a class="title" href="/posts/2022/6c92115f.html" title="Spring">Spring</a><time datetime="2022-02-16T09:35:58.000Z" title="发表于 2022-02-16 17:35:58">2022-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2022/50a54d3c.html" title="视图"><img src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="视图"/></a><div class="content"><a class="title" href="/posts/2022/50a54d3c.html" title="视图">视图</a><time datetime="2022-02-16T09:33:17.000Z" title="发表于 2022-02-16 17:33:17">2022-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2022/196d9dc7.html" title="流程控制结构"><img src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="流程控制结构"/></a><div class="content"><a class="title" href="/posts/2022/196d9dc7.html" title="流程控制结构">流程控制结构</a><time datetime="2022-02-16T09:33:12.000Z" title="发表于 2022-02-16 17:33:12">2022-02-16</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>
             
             </div>
             <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"><span class="card-category-list-name">踩坑记录</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.15em; color: rgb(157, 60, 196)">前端</a><a href="/tags/vue-element/" style="font-size: 1.15em; color: rgb(69, 32, 169)">vue-element</a></div></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">303</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-01-16T14:18:04.447Z"></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/footer.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Simon</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script>var preloader = {
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">笔记</span><span class="card-category-list-count">29</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"><span class="card-category-list-name">踩坑记录</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/MySQL/" style="font-size: 1.38em; color: rgb(167, 84, 196)">MySQL</a><a href="/tags/JavaWeb/" style="font-size: 1.3em; color: rgb(144, 88, 32)">JavaWeb</a><a href="/tags/JavaSE/" style="font-size: 1.45em; color: rgb(196, 73, 197)">JavaSE</a><a href="/tags/Spring/" style="font-size: 1.22em; color: rgb(151, 174, 186)">Spring</a><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.15em; color: rgb(104, 123, 41)">前端</a><a href="/tags/vue-element/" style="font-size: 1.15em; color: rgb(92, 36, 72)">vue-element</a><a href="/tags/JUC/" style="font-size: 1.15em; color: rgb(102, 23, 156)">JUC</a><a href="/tags/SpringBoot/" style="font-size: 1.15em; color: rgb(1, 44, 80)">SpringBoot</a></div></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">30</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">63.7k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-02-16T09:57:00.647Z"></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/footer.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Simon</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script>var preloader = {
   endLoading: () => {
     document.body.style.overflow = 'auto';
     document.getElementById('loading-box').classList.add("loaded")
@@ -204,8 +354,8 @@
 }
 window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function subtitleType () {
   if (true) { 
-    var typed = new Typed("#subtitle", {
-      strings: "What hurts more？,The pain of hard work or the the pain of regret?".split(","),
+    window.typed = new Typed("#subtitle", {
+      strings: ["What hurts more？","The pain of hard work or the the pain of regret?"],
       startDelay: 300,
       typeSpeed: 150,
       loop: true,

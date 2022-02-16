@@ -1,0 +1,357 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Simon's Blog - Don't think,do it</title><meta name="keywords" content="技术博客,Java开发"><meta name="author" content="Simon"><meta name="copyright" content="Simon"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta property="og:type" content="website">
+<meta property="og:title" content="Simon&#39;s Blog">
+<meta property="og:url" content="https://simonjiang99.github.io/page/2/index.html">
+<meta property="og:site_name" content="Simon&#39;s Blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://simonjiang99.github.io/img/avatar.png">
+<meta property="article:author" content="Simon">
+<meta property="article:tag" content="技术博客,Java开发">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://simonjiang99.github.io/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://simonjiang99.github.io/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Simon\'s Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-02-16 17:57:01'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">30</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment"></i><span> 哔哔一下</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/index.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Simon's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment"></i><span> 哔哔一下</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Simon's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/simonjiang99" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ghostvipjiang@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2022/54189da0.html" title="DQL"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DQL"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/54189da0.html" title="DQL">DQL</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:29:11.000Z" title="发表于 2022-02-16 17:29:11">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">DQL语言基础查询
+语法
+
+select 查询列表 from 表名；
+
+特点
+
+
+查询列表可以是：表中的字段、常量值、表达式、函数，也可以是多个
+查询的结果是一个虚拟表
+
+
+示例
+
+
+查询单个字段select 字段名 from 表名;
+1SELECT last_name FROM employees;
+查询多个字段select 字段名，字段名 from 表名;
+1SELECT last_name,salary,email FROM employees;
+查询所有字段select * from 表名;
+1SELECT * FROM employees;
+查询常量
+select 常量值;
+12SE ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2022/754f9a28.html" title="数据库概念"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据库概念"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/754f9a28.html" title="数据库概念">数据库概念</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:28:38.000Z" title="发表于 2022-02-16 17:28:38">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">数据库相关概念
+DB:数据库，保存一组有组织的数据的容器
+DBMS:数据库管理系统，又称为数据库软件(产品),用于创建或管理DB中的数据
+SQL:结构化查询语言,用于和DBMS通信的语言
+
+数据库存储数据的特点
+将数据放到表中，表再放到库中
+一个数据库可以有多个表，每个表都有一个名字，用来标识自己。表名具有唯一性
+表具有一些特性,这些特性定义了数据在表中如何存储,类似于java中”类”的设计
+表由列组成,也称字段.所有的表都是由一个或多个列组成的,每一列类似java中的”属性”
+表中的数据是按行存储的,每一行类似于java中的”对象”
+
+MySQL服务的启动和停止
+启动：管理员cmd-&gt; ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2022/1bff3c65.html" title="MyBatis"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MyBatis"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/1bff3c65.html" title="MyBatis">MyBatis</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:25:41.000Z" title="发表于 2022-02-16 17:25:41">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">Mybatis1. 简介1.1 什么是Mybatis
+MyBatis 是一款优秀的持久层框架
+它支持自定义 SQL、存储过程以及高级映射。
+MyBatis 免除了几乎所有的 JDBC 代码以及设置参数和获取结果集的工作。
+MyBatis 可以通过简单的 XML 或注解来配置和映射原始类型、接口和 Java POJO（Plain Old Java Objects，普通老式 Java 对象）为数据库中的记录。
+
+1.2 持久化数据持久化
+
+持久化就是将程序在持久状态和瞬时状态转化的过程
+内存:断电即失
+
+1.3 持久层Dao层,Service层,Controller层…
+
+完成持久化工作的代码块
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2022/99720b1c.html" title="JavaWeb"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaWeb"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/99720b1c.html" title="JavaWeb">JavaWeb</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:24:03.000Z" title="发表于 2022-02-16 17:24:03">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">基本概念web开发:
+
+web,网页的意思,www.baidu.com
+静态web
+html,css
+提供给所有人看的数据始终不会发生变化
+
+
+动态web
+淘宝,几乎所有的网站;
+每个人在不同时间不同地点看到的信息不同
+技术栈:Servlet/JSP,ASP,PHP
+
+
+
+在Java中,动态web资源开发的技术统称为JavaWeb
+web应用程序可以提供浏览器访问的程序;
+
+a.html,b.btml…多个web资源,这些资源可以被外界访问,对外界提供服务;
+我们访问的任何一个页面或资源,都存在于这个世界上的某一台计算机上
+URL
+这些统一的web资源会被放在同一个文件夹中,web应用程序–& ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2022/cc1b9611.html" title="JavaScript"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaScript"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/cc1b9611.html" title="JavaScript">JavaScript</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:23:15.000Z" title="发表于 2022-02-16 17:23:15">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">什么是JavaScript
+
+世界上最流行的脚本语言
+
+入门引入Javascript
+内部引入
+1234&lt;!--script标签内写js代码--&gt;&lt;script&gt;    alert(&#x27;hello,world&#x27;);&lt;/script&gt;
+外部引入
+123&lt;!--外部引入--&gt;&lt;!--注意:script标签必须成对出现--&gt;&lt;script src=&quot;js/qj.js&quot;&gt;&lt;/script&gt;
+
+1234567891011121314151617181920212223&lt;!DOC ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2022/2eec1551.html" title="HTML"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/2eec1551.html" title="HTML">HTML</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:21:15.000Z" title="发表于 2022-02-16 17:21:15">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">HTML
+Hyper Text Markup Language(超文本标记语言) - 超文本包括：文字，图片，音频，视频，动画等
+
+HTML基本结构
+
+,等成对的标签,分别叫做`开放标签`和`闭合标签`
+单独呈现的标签(空元素),如;意为用/来关闭空元素
+
+网页基本信息
+DOCTYPE:告诉浏览器,我们要使用什么规范
+head标签代表网页头部
+meta描述性标签,用来描述网站的一些信息
+title网页标题
+body标签代表网页主体
+
+网页基本标签
+标题标签
+123456&lt;h1&gt;一级标题&lt;/h1&gt;&lt;h2&gt;二级标题&lt;/h2&gt;&lt;h3&gt;三级标 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2022/eb9166f8.html" title="JUC并发编程"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JUC并发编程"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/eb9166f8.html" title="JUC并发编程">JUC并发编程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:18:47.000Z" title="发表于 2022-02-16 17:18:47">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">JUC(并发编程)什么是JUC在并发编程中使用的工具类
+
+java.util.concurrent
+java.util.concurrent.atomic
+java.util.concurrent.locks
+
+业务： 普通的线程代码  Thread
+​        runnable：没有返回值，效率相比Callable相对较低
+线程和进程进程和线程
+进程：一个程序，QQ.exe Spotify.exe  程序的集合
+一个进程往往可以包含多个线程,至少包含一个!
+java默认有2个线程   main,GC
+
+线程:开了一个进程Typora   打字,自动保存(线程负责的)
+对于Java而言: ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2022/16d8d6c5.html" title="线程通信"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="线程通信"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/16d8d6c5.html" title="线程通信">线程通信</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:15:55.000Z" title="发表于 2022-02-16 17:15:55">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">线程通信生产者消费者问题
+仓库中只能放一件产品，生产者生产产品放入仓库，消费者将产品取出
+如果仓库中没有产品，则生产者将产品放入仓库，否则停止生产并等待，直到仓库中的产品被消费者取走为止
+如果仓库中有产品，则消费者可以将产品取走，否则停止消费消费并等待，直到仓库中再次放入产品为止
+
+
+这是一个线程同步问题，生产者和消费者共享同一个资源，并且生产者和消费者之间互相依赖，互相通信，互为条件
+
+在此问题中，仅有synchronized是不够的
+
+synchronized可阻止并发更新同一个共享资源，实现了同步
+sunchronized不能用来实现不同线程之间的消息传递（通信）
+
+
+两者之间需要有一个 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2022/871763f8.html" title="线程state"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="线程state"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/871763f8.html" title="线程state">线程state</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:15:49.000Z" title="发表于 2022-02-16 17:15:49">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">线程停止stop
+设置一个标志位flag = true
+设置一个公开的方法stop停止线程，转换标志位
+调用stop方法切换标志位，让线程停止
+
+线程休眠sleep
+sleep(时间)指定当前线程阻塞的毫秒数
+sleep存在异常InterruptedException
+sleep时间达到后线程进入就绪状态
+sleep可以模拟网络延时，倒计时等
+每一个对象都有一个锁，sleep不会释放锁
+
+线程礼让yield
+礼让线程，让当前正在执行的线程暂停，但不阻塞
+将线程从运行状态转为就绪状态
+让cpu重新调度，礼让不一定成功！看cpu心情
+
+线程强制执行join
+join线程，待此线程执行完成后，再执行 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2022/895e9db.html" title="线程同步"><img class="post_bg" src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="线程同步"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2022/895e9db.html" title="线程同步">线程同步</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-16T09:15:42.000Z" title="发表于 2022-02-16 17:15:42">2022-02-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">锁synchronized同步方法
+同步方法：public synchronized void method(int args) {}
+每个对象对应一把锁，每个synchronized方法都必须获得调用该对象的锁才能执行，否则线程会阻塞，方法一旦执行，就独占该锁，直到方法返回才释放锁，后面被阻塞的线程才能获得这个锁，继续执行
+
+
+缺陷：若将一个大的方法申明为synchronized将会影响效率
+同步块
+同步块：synchronized(Obj){}
+Obj称为同步监视器
+Obj可以是任何对象，但是推荐使用共享资源作为同步监视器
+
+
+同步监视器的执行过程
+第一个线程访问，锁定同步监视器，执行其中 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Simon</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">30</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/simonjiang99" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ghostvipjiang@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">最近将写的所有笔记整理进了博客,部分博文水的一塌糊涂.../捂脸</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/2022/6f2612a2.html" title="SpringBoot"><img src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot"/></a><div class="content"><a class="title" href="/posts/2022/6f2612a2.html" title="SpringBoot">SpringBoot</a><time datetime="2022-02-16T09:36:15.000Z" title="发表于 2022-02-16 17:36:15">2022-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2022/ae0f95e0.html" title="SpringMVC"><img src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringMVC"/></a><div class="content"><a class="title" href="/posts/2022/ae0f95e0.html" title="SpringMVC">SpringMVC</a><time datetime="2022-02-16T09:36:04.000Z" title="发表于 2022-02-16 17:36:04">2022-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2022/6c92115f.html" title="Spring"><img src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring"/></a><div class="content"><a class="title" href="/posts/2022/6c92115f.html" title="Spring">Spring</a><time datetime="2022-02-16T09:35:58.000Z" title="发表于 2022-02-16 17:35:58">2022-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2022/50a54d3c.html" title="视图"><img src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="视图"/></a><div class="content"><a class="title" href="/posts/2022/50a54d3c.html" title="视图">视图</a><time datetime="2022-02-16T09:33:17.000Z" title="发表于 2022-02-16 17:33:17">2022-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2022/196d9dc7.html" title="流程控制结构"><img src="/img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="流程控制结构"/></a><div class="content"><a class="title" href="/posts/2022/196d9dc7.html" title="流程控制结构">流程控制结构</a><time datetime="2022-02-16T09:33:12.000Z" title="发表于 2022-02-16 17:33:12">2022-02-16</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">笔记</span><span class="card-category-list-count">29</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"><span class="card-category-list-name">踩坑记录</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/MySQL/" style="font-size: 1.38em; color: rgb(167, 84, 196)">MySQL</a><a href="/tags/JavaWeb/" style="font-size: 1.3em; color: rgb(144, 88, 32)">JavaWeb</a><a href="/tags/JavaSE/" style="font-size: 1.45em; color: rgb(196, 73, 197)">JavaSE</a><a href="/tags/Spring/" style="font-size: 1.22em; color: rgb(151, 174, 186)">Spring</a><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.15em; color: rgb(104, 123, 41)">前端</a><a href="/tags/vue-element/" style="font-size: 1.15em; color: rgb(92, 36, 72)">vue-element</a><a href="/tags/JUC/" style="font-size: 1.15em; color: rgb(102, 23, 156)">JUC</a><a href="/tags/SpringBoot/" style="font-size: 1.15em; color: rgb(1, 44, 80)">SpringBoot</a></div></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">30</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">63.7k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-02-16T09:57:00.647Z"></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/footer.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Simon</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    window.typed = new Typed("#subtitle", {
+      strings: ["What hurts more？","The pain of hard work or the the pain of regret?"],
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = 'What hurts more？'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
